@@ -7,15 +7,15 @@
   
   <title>Hello hexo | Hexo</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="��ѧ���߿����˵�ʱ�俴js�еĿ⣬�ţ����յ�����һЩ��һ�����ջ� ��ѧ�����ṩһЩ���õ���ѧ������ʵ�ù��ߣ���ͬ�����ṩ�Ľӿڲ���ȫһ�£����ǻ��������ǿ϶����ṩ�ġ�����֮����Դ�ڣ���ģ�͵ĽǶ�ȥ������ʶ���еĳ����ͷ������������ڿ�IO��֮ʱ���Ȼ��ʶ������������">
+  <meta name="description" content="数学工具库花了点时间看js中的库，嗯，今日倒是有一些不一样的收获 数学库中提供一些常用的数学常量和实用工具，不同语言提供的接口不完全一致，但是基本功能是肯定有提供的。今日之所获源于：从模型的角度去从新认识库中的常量和方法。（早上在看IO流之时便忽然意识到，计算机世界中太多的实现细节是我无法把握的东西，我以前包括以后所学的东西实际上都是一个个的模型，IO流中以内存区分I和O，从处理单元区分为字节流和">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Hello hexo">
 <meta property="og:url" content="http://example.com/2020/09/19/Hello-hexo/index.html">
 <meta property="og:site_name" content="Hexo">
-<meta property="og:description" content="��ѧ���߿����˵�ʱ�俴js�еĿ⣬�ţ����յ�����һЩ��һ�����ջ� ��ѧ�����ṩһЩ���õ���ѧ������ʵ�ù��ߣ���ͬ�����ṩ�Ľӿڲ���ȫһ�£����ǻ��������ǿ϶����ṩ�ġ�����֮����Դ�ڣ���ģ�͵ĽǶ�ȥ������ʶ���еĳ����ͷ������������ڿ�IO��֮ʱ���Ȼ��ʶ������������">
+<meta property="og:description" content="数学工具库花了点时间看js中的库，嗯，今日倒是有一些不一样的收获 数学库中提供一些常用的数学常量和实用工具，不同语言提供的接口不完全一致，但是基本功能是肯定有提供的。今日之所获源于：从模型的角度去从新认识库中的常量和方法。（早上在看IO流之时便忽然意识到，计算机世界中太多的实现细节是我无法把握的东西，我以前包括以后所学的东西实际上都是一个个的模型，IO流中以内存区分I和O，从处理单元区分为字节流和">
 <meta property="og:locale" content="en_US">
 <meta property="article:published_time" content="2020-09-19T01:47:51.000Z">
-<meta property="article:modified_time" content="2020-09-21T05:32:48.099Z">
+<meta property="article:modified_time" content="2020-09-21T07:39:17.704Z">
 <meta property="article:author" content="John Doe">
 <meta name="twitter:card" content="summary">
   
@@ -88,9 +88,9 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h1 id="��ѧ���߿�"><a href="#��ѧ���߿�" class="headerlink" title="��ѧ���߿�"></a>��ѧ���߿�</h1><p><strong>���˵�ʱ�俴js�еĿ⣬�ţ����յ�����һЩ��һ�����ջ�</strong></p>
-<p>��ѧ�����ṩһЩ���õ���ѧ������ʵ�ù��ߣ���ͬ�����ṩ�Ľӿڲ���ȫһ�£����ǻ��������ǿ϶����ṩ�ġ�����֮����Դ�ڣ���ģ�͵ĽǶ�ȥ������ʶ���еĳ����ͷ������������ڿ�IO��֮ʱ���Ȼ��ʶ���������������̫���ʵ��ϸ�������޷����յĶ���������ǰ�����Ժ���ѧ�Ķ���ʵ���϶���һ������ģ�ͣ�IO�������ڴ�����I��O���Ӵ�����Ԫ����Ϊ�ֽ������ַ������ֽ������ļ�ָ��Ĭ��ָ���ļ��ֽ����е���ͷ����InputStream.read()��ȡ�Ľ��ֽ������е���һ�ֽڲ����ļ�ƫ��ָ�����һλ��ע������ļ����ֽ������ļ����䵥Ԫ��һ���ֽڣ�8λ��ÿλ�д洢�Ķ���[0-255]�е�һ���޷�������InputStream.read()����ֵ��[0-255]��-1�������ͣ���ʶ����ϸ�ڡ���ʵ���ϲ���ϸ�ڶ���ģ�͸�����ʶ����Щģ��֮��������ļ���������̵���ʶ�ˣ���</p>
-<h2 id="һ������"><a href="#һ������" class="headerlink" title="һ������"></a>һ������</h2><p><strong>(jsʵ����)</strong></p>
+        <h1 id="数学工具库"><a href="#数学工具库" class="headerlink" title="数学工具库"></a>数学工具库</h1><p><strong>花了点时间看js中的库，嗯，今日倒是有一些不一样的收获</strong></p>
+<p>数学库中提供一些常用的数学常量和实用工具，不同语言提供的接口不完全一致，但是基本功能是肯定有提供的。今日之所获源于：从模型的角度去从新认识库中的常量和方法。（早上在看IO流之时便忽然意识到，计算机世界中太多的实现细节是我无法把握的东西，我以前包括以后所学的东西实际上都是一个个的模型，IO流中以内存区分I和O，从处理单元区分为字节流和字符流，字节流中文件指针默认指向文件字节序列的虚头部，InputStream.read()读取文杰字节序列中的下一字节并将文件偏移指针后移一位，注意的是文件的字节流中文件记忆单元是一个字节！8位，每位中存储的都是[0-255]中的一个无符号数，InputStream.read()返回值有[0-255]和-1两种类型，认识到这细节——实际上不是细节而是模型给，认识到这些模型之后对流和文件流就有深刻的认识了！）</p>
+<h2 id="一、常量"><a href="#一、常量" class="headerlink" title="一、常量"></a>一、常量</h2><p><strong>(js实现下)</strong></p>
 <ul>
 <li>E</li>
 <li>LN2</li>
@@ -101,8 +101,8 @@
 <li>SQRT1_2</li>
 <li>SQRT2</li>
 </ul>
-<h2 id="��������"><a href="#��������" class="headerlink" title="��������"></a>��������</h2><p><strong>��jsʵ���£�</strong></p>
-<h3 id="��������-1"><a href="#��������-1" class="headerlink" title="��������"></a>��������</h3><ul>
+<h2 id="二、方法"><a href="#二、方法" class="headerlink" title="二、方法"></a>二、方法</h2><p><strong>（js实现下）</strong></p>
+<h3 id="基本工具"><a href="#基本工具" class="headerlink" title="基本工具"></a>基本工具</h3><ul>
 <li>max(…)</li>
 <li>min(…)</li>
 <li>floor(2.5)</li>
@@ -110,15 +110,15 @@
 <li>round(2.5)</li>
 <li>abs()</li>
 </ul>
-<h3 id="���ݹ���"><a href="#���ݹ���" class="headerlink" title="���ݹ���"></a>���ݹ���</h3><ul>
+<h3 id="求幂工具"><a href="#求幂工具" class="headerlink" title="求幂工具"></a>求幂工具</h3><ul>
 <li>pow(a,x)</li>
 <li>sqrt(2)</li>
 <li>exp(x)</li>
 </ul>
-<h3 id="0-1-���������"><a href="#0-1-���������" class="headerlink" title="[0,1)���������"></a>[0,1)���������</h3><ul>
+<h3 id="0-1-随机数工具"><a href="#0-1-随机数工具" class="headerlink" title="[0,1)随机数工具"></a>[0,1)随机数工具</h3><ul>
 <li>random</li>
 </ul>
-<h3 id="�������"><a href="#�������" class="headerlink" title="�������"></a>�������</h3><ul>
+<h3 id="三角相关"><a href="#三角相关" class="headerlink" title="三角相关"></a>三角相关</h3><ul>
 <li>sin(x)</li>
 <li>cos(x)</li>
 <li>tan(x)</li>
@@ -127,23 +127,23 @@
 <li>atan(x)</li>
 <li>atan2(x)</li>
 </ul>
-<h2 id="����math���е�g��"><a href="#����math���е�g��" class="headerlink" title="����math���е�ģ��"></a>����math���е�ģ��</h2><h3 id="ȡ��g��"><a href="#ȡ��g��" class="headerlink" title="ȡ��ģ��"></a>ȡ��ģ��</h3><ul>
-<li>����ȡ��</li>
-<li>����ȡ��</li>
-<li>��������ȡ��</li>
+<h2 id="三、math库中的模型"><a href="#三、math库中的模型" class="headerlink" title="三、math库中的模型"></a>三、math库中的模型</h2><h3 id="取整模型"><a href="#取整模型" class="headerlink" title="取整模型"></a>取整模型</h3><ul>
+<li>向上取整</li>
+<li>向下取整</li>
+<li>四舍五入取整</li>
 </ul>
-<p>���ֵģ��</p>
+<p>最大值模型</p>
 <ul>
-<li><p>���ֵģ��</p>
+<li><p>最大值模型</p>
 </li>
-<li><p>��Сֵģ��</p>
+<li><p>最小值模型</p>
 </li>
 </ul>
-<p>a<sup>x</sup>ģ��</p>
+<p>a<sup>x</sup>模型</p>
 <ol>
-<li><p><strong>ģ��1{a:��0ʵ��, b:ʵ��}</strong></p>
+<li><p><strong>模型1{a:非0实数, b:实数}</strong></p>
 </li>
-<li><p><strong>ģ��1{a:ʵ��, b:ʵ��}����ʱ0<sup>0</sup>===1����js�У�</strong></p>
+<li><p><strong>模型1{a:实数, b:实数}；此时0<sup>0</sup>===1（！js中）</strong></p>
 </li>
 </ol>
 <ul>
@@ -151,42 +151,42 @@
 <li>sqrt(a)===pow(a,1/2)</li>
 <li>exp(x)===pow(Math.e,x)</li>
 </ul>
-<h3 id="0-1-���g��"><a href="#0-1-���g��" class="headerlink" title="[0,1)���ģ��"></a>[0,1)���ģ��</h3><ol>
-<li><strong>js�������ʹ�÷ǳ��򵥣�����Ҫ�������ӵ�����</strong></li>
-<li><strong>js��ֻ�ṩ[0,1)�����ģ�ͣ��Ҹ�����Ϊ�������õģ�[0,1)�����ģ����ʹ��ʱһ����Ҫ��ӳ�䣬ӳ��������֣����š�ƫ�ơ�����ת��</strong></li>
+<h3 id="0-1-随机模型"><a href="#0-1-随机模型" class="headerlink" title="[0,1)随机模型"></a>[0,1)随机模型</h3><ol>
+<li><strong>js中随机数使用非常简单，不需要考虑种子的问题</strong></li>
+<li><strong>js中只提供[0,1)随机数模型，我个人认为这便是最好的，[0,1)随机数模型在使用时一般需要做映射，映射包含三种：缩放、偏移、类型转换</strong></li>
 </ol>
-<h4 id="���1����10-20-���������"><a href="#���1����10-20-���������" class="headerlink" title="���1����10,20]���������"></a>���1����10,20]���������</h4><ol>
-<li><p>�Ŵ�</p>
+<h4 id="获得1个（10-20-的随机整数"><a href="#获得1个（10-20-的随机整数" class="headerlink" title="获得1个（10,20]的随机整数"></a>获得1个（10,20]的随机整数</h4><ol>
+<li><p>放大</p>
 <p>Math.random()*10</p>
 </li>
-<li><p>ƫ��</p>
+<li><p>偏移</p>
 <p>Math.random()*10+11</p>
 </li>
-<li><p>����ת��</p>
+<li><p>类型转换</p>
 <p>Math.floor(Math.random()*10+11)</p>
 </li>
 </ol>
-<p><strong>(ע��ϸ�ֻ��1��(10-20]������������(10,20]��������������[10,20]����������������ڴ������ǲ�һ���ģ�</strong></p>
-<h4 id="���1��-10-20-���������"><a href="#���1��-10-20-���������" class="headerlink" title="���1��[10,20]���������"></a>���1��[10,20]���������</h4><ol>
-<li><p>�Ŵ�</p>
+<p><strong>(注意细分获得1个(10-20]的随机数，获得(10,20]的随机整数，获得[10,20]的随机整数，三者在处理上是不一样的！</strong></p>
+<h4 id="获得1个-10-20-的随机整数"><a href="#获得1个-10-20-的随机整数" class="headerlink" title="获得1个[10,20]的随机整数"></a>获得1个[10,20]的随机整数</h4><ol>
+<li><p>放大</p>
 <p>Math.random()*11</p>
 </li>
-<li><p>ƫ��</p>
+<li><p>偏移</p>
 <p>Math.random()*11+10</p>
 </li>
 </ol>
-<h4 id="���1�������booleanֵ"><a href="#���1�������booleanֵ" class="headerlink" title="���1�������booleanֵ"></a>���1�������booleanֵ</h4><ol>
+<h4 id="获得1个的随机boolean值"><a href="#获得1个的随机boolean值" class="headerlink" title="获得1个的随机boolean值"></a>获得1个的随机boolean值</h4><ol>
 <li>Boolean(Math.round(Math.random()))</li>
 </ol>
-<h4 id="����g��"><a href="#����g��" class="headerlink" title="����ģ��"></a>����ģ��</h4><p>��…���߱�ʾ���������……��</p>
-<h2 id="�g��򵥵�g��"><a href="#�g��򵥵�g��" class="headerlink" title="�ġ��򵥵�ģ��"></a>�ġ��򵥵�ģ��</h2><h3 id="����g��-1"><a href="#����g��-1" class="headerlink" title="����ģ��"></a>����ģ��</h3><p>3.5-2=1.5</p>
-<p>ģ�͵ĳ��벻��Ϊ���������ø��ӣ������������ü򵥡�ע��������Ǵ�3.5��λ���ȵ�ľ�����и���2��λ���ȵ�ľ�壬���˵�ľ�峤��Ϊ1.5��λ���ȡ������ڳ����ʱ��Ҫ��ѭ��ԭ�����ʵ�Ϊֹ�����̲����ĵ�������������ã����뵽һ���̶ȵĺô������ǿ��Ի���˼���������ʽ�ı����Ի�ø������������֪��</p>
-<h3 id="�˷�g��"><a href="#�˷�g��" class="headerlink" title="�˷�ģ��"></a>�˷�ģ��</h3><h3 id="����g��-2"><a href="#����g��-2" class="headerlink" title="����ģ��"></a>����ģ��</h3><h3 id="ȡ���j�g��"><a href="#ȡ���j�g��" class="headerlink" title="ȡ���ĵ�ģ��"></a>ȡ���ĵ�ģ��</h3><h3 id="��̽�������߽�㣩"><a href="#��̽�������߽�㣩" class="headerlink" title="��̽�������߽�㣩"></a>��̽�������߽�㣩</h3><h3 id="��g��С��"><a href="#��g��С��" class="headerlink" title="��ģ��С��"></a>��ģ��С��</h3><p>�ţ���һ��˼�����ֹ�Ƥ���⣬��Щ������û�б߽�ģ�˼ά�������ұ߽�����񣬶��ڻ�����޽������˶�����˼���ǻ�����޷���֤�����Ƕ�����˼����Щ������……����ȷ�˵���������…�������….���ٴ���ȷ�˵�������н��…�������޽��…���ٴ���ȷ�˵��������˼����Ϊ��ʵ��…��������˼���벻����ʵ�ġ����Ҳ�����ʵ�ġ�����������б߽�ģ�������һЩ֤����֤ʵ����ˣ�������д֤�ݺ�֤�����̶��Ҷ�����İ���ģ�������֪�ģ����һЩ�����б߽�����⣬���Ҷ�����û�б߽�ġ���…�������Ƕ���Ƹе�һ��…������û����…#�ֶ���ο#</p>
+<h4 id="三角模型"><a href="#三角模型" class="headerlink" title="三角模型"></a>三角模型</h4><p>（…笔者表示三角是真的……）</p>
+<h2 id="四、简单的模型"><a href="#四、简单的模型" class="headerlink" title="四、简单的模型"></a>四、简单的模型</h2><h3 id="拆离模型"><a href="#拆离模型" class="headerlink" title="拆离模型"></a>拆离模型</h3><p>3.5-2=1.5</p>
+<p>模型的抽离不是为了让世界变得复杂，而是让世界变得简单。注意的是我们从3.5单位长度的木板上切割下2单位长度的木板，余了的木板长度为1.5单位长度。我们在抽象的时候要遵循的原则是适当为止，过犹不满的道理在这里很试用！拆离到一定程度的好处是我们可以回溯思考抽象表达式的本质以获得更具体形象的认知。</p>
+<h3 id="乘法模型"><a href="#乘法模型" class="headerlink" title="乘法模型"></a>乘法模型</h3><h3 id="除法模型"><a href="#除法模型" class="headerlink" title="除法模型"></a>除法模型</h3><h3 id="取中心点模型"><a href="#取中心点模型" class="headerlink" title="取中心点模型"></a>取中心点模型</h3><h3 id="试探方法（边界点）"><a href="#试探方法（边界点）" class="headerlink" title="试探方法（边界点）"></a>试探方法（边界点）</h3><h3 id="简单模型小结"><a href="#简单模型小结" class="headerlink" title="简单模型小结"></a>简单模型小结</h3><p>嗯，又一次思考这种瓜皮问题，这些问题事没有边界的，思维依附于右边界的事务，对于混沌而无界的事物，人对它的思考是混沌的无法验证，似是而非是思考这些问题结果……打个比方说，人有灵魂…人无灵魂….，再打个比方说宇宙是有界的…宇宙是无界的…，再打个比方说我所见所思所想为真实的…我所见所思所想不是真实的——我不是真实的。宇宙或许是有边界的，或许有一些证据能证实是如此，但是这写证据和证明过程对我而言是陌生的，我是无知的，因而一些可能有边界的问题，对我而言是没有边界的。唉…今日又是多愁善感的一天…但是我没有迷…#手动欣慰#</p>
 
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://example.com/2020/09/19/Hello-hexo/" data-id="ckfc7uerm0002wcimcmp432k5" class="article-share-link">Share</a>
+      <a data-url="http://example.com/2020/09/19/Hello-hexo/" data-id="ckfc7yvfw0001skim1s7030vx" class="article-share-link">Share</a>
       
       
     </footer>
